@@ -1,5 +1,3 @@
-# Ignore all .exe files
 *.exe
-
-# Ignore VSCode settings folder
 .vscode/
+.gitignore
