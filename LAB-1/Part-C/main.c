@@ -53,13 +53,13 @@ int main()
     printf("Smallest value is %d\n", min);
 
     // f. Insert an element at a given position in the array.
-    int position = 5;
+    int position_a = 5;
     int element_a = 1;
-    for (int i = length; i > position; i--)
+    for (int i = length; i > position_a; i--)
     {
         arr[i] = arr[i - 1];
     }
-    arr[position] = element_a;
+    arr[position_a] = element_a;
     length++;
 
     for (int i = 0; i < length; i++)
@@ -67,6 +67,24 @@ int main()
         printf("%d ", arr[i]);
     }
     printf("\n");
+
+    // g. Delete an element from a given position in the array.
+    int position_b = 5;
+    for (int i = position_b; i < length - 1; i++)
+    {
+        arr[i] = arr[i + 1];
+    }
+
+    length--;
+
+    for (int i = 0; i < length; i++)
+    {
+        printf("%d ", arr[i]);
+    }
+    printf("\n");
+
+    // h. Searching an element in the array with linear search
+    // It's the same as C because I've used linear search in C too
 
     return 0;
 }
